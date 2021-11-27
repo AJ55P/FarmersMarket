@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Tomato",
+        "description": "Grown in California where its sunny and know ya",
+        "price": "50 cents per pound"
+    },
+    {
+        "name": "Broccoli",
+        "description": "Grown in California where its sunny and know ya",
+        "price": "80 cents per pound"
+    },
+    {
+        "name": "Celery",
+        "description": "Grown in California where its sunny and know ya",
+        "price": "80 cents per pound"
+    },
+    {
+        "name": "Apples",
+        "description": "Grown in California where its sunny and know ya",
+        "price": "80 cents per pound"
+    }
+]
