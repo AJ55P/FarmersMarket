@@ -1,22 +1,39 @@
 [
     {
-        "name": "Tomato",
-        "description": "Grown in California where its sunny and know ya",
-        "price": "50 cents per pound"
+        "name": "Roma Tomatoes",
+        "description": "Fresh, hand picked, tomatoes, ready to be mixed in a salad!",
+        "price": "80 cents each!",
+        "image": "images/tomato.png"
     },
     {
         "name": "Broccoli",
-        "description": "Grown in California where its sunny and know ya",
-        "price": "80 cents per pound"
+        "description": "Excellent choice! Good source of fiber, calcium, and vitamin C!",
+        "price": "$1 per 5 pounds",
+        "image": "images/broccoli.png"
     },
     {
         "name": "Celery",
-        "description": "Grown in California where its sunny and know ya",
-        "price": "80 cents per pound"
+        "description": "Cool and crisp!, and low calorie!, so eat as much as you can",
+        "price": "20 cents each!",
+        "image": "images/celery.png"
+
     },
     {
-        "name": "Apples",
-        "description": "Grown in California where its sunny and know ya",
-        "price": "80 cents per pound"
+        "name": "Granny Smith Apples",
+        "description": "Northern California grown.",
+        "price": "30 cents each!",
+        "image": "images/grannySmithApple.png"
+    },
+    {
+        "name": "Spinach",
+        "description": "Powerhouse, leafy greens, sauteed or raw, good choice.",
+        "price": "$2 per 5 bundles!",
+        "image": "images/spinach.png"
+    },
+    {
+        "name": "Green Cabbage",
+        "description": "King of vitamin C, and, organic.",
+        "price": "10 cents per pound!",
+        "image": "images/cabbage.png"
     }
 ]
