@@ -11,9 +11,13 @@
         <header>
             <h1>Farmer's Market 24/7!</h1>
         </header>
+        <nav id="navX">
+            <p><a href="/">Go Back Home!</a></p>
+            <p><a href="/">Go Back Home!</a></p>
+        </nav>
         <main>
             {% for item in items %}
-                <div>
+                <div id="divH">
                     <h2>{{item.name}}</h2>
                     <p><strong>Price:</strong> {{item.price}}</p>
                     <p><strong>Description:</strong> {{item.description}}</p>

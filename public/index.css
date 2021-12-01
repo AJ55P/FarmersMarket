@@ -3,7 +3,7 @@ body{
     background-color: rgb(232, 208, 77);
 }
 
-main{
+main,#mainHome{
     background-color: white;
     display: flex;
     flex-flow: row wrap;
@@ -13,7 +13,55 @@ main{
     padding: 1rem;
 }
 
-div{
+#divH, #mainHome div{
+    flex: 1 20%;
+    margin: 0.5rem;
+    border: 3px double black;
+    padding: .5rem;
+}
+
+#mainHome div{
+    cursor: grab;
+}
+
+#mainHome div:hover{
+    background-color: rgb(47, 179, 179);
+    text-decoration: underline;
+}
+
+#mainHome div h1{
+    text-align: center;
+}
+
+#mainHome h2{
+    text-align: center;
+}
+
+
+/* Nav styling */
+#navX{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+#navX a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+}
+
+#navX a:hover{
+    text-decoration: underline;
+}
+
+
+/* Nav styling */
+
+#divH{
     flex: 1 40%;
     margin: 0.5rem;
     display: grid;
@@ -24,26 +72,26 @@ div{
     padding: .5rem;
 }
 
-div h2{
+#divH h2{
     font-family: Comic Sans MS, Comic Sans, cursive;
     grid-row: 1/2;
     grid-column: 1/2;
 }
 
-div p:nth-of-type(1){
-    font-family:Georgia, 'Times New Roman', Times, serif;/*Verdana, Geneva, Tahoma, sans-serif;*/
+#divH p:nth-of-type(1){
+    font-family:Georgia, 'Times New Roman', Times, serif;
     grid-row: 1/2;
     grid-column: 2/3;
 }
 
-div p:nth-of-type(2){
+#divH p:nth-of-type(2){
     font-family:Georgia, 'Times New Roman', Times, serif;
     grid-row: 2/3;
     grid-column: 2/3;
 
 }
 
-div img{
+#divH img, #mainHome img{
     max-width: 100%;
     grid-row: 2/3;
     grid-column: 1/2;
@@ -51,7 +99,7 @@ div img{
 
 header{
     border-bottom: 0.5rem ridge brown;
-    margin-bottom: 4rem;
+    margin-bottom: 1.1rem;
     text-align: center;
 }
 
@@ -60,13 +108,13 @@ header h1{
     margin-bottom: 0.5rem;
 }
 
-label{
+#divH label{
     grid-row: 3/4;
     grid-column: 1/2;
     text-align: center;
 }
 
-select{
+#divH select{
     grid-row: 3/4;
     grid-column: 2/3;
 }
