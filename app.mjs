@@ -5,7 +5,7 @@ import express from 'express';
 import { createRequire } from 'module';
 
 const require = createRequire(import.meta.url);
-let produceItems = require('./items.json');
+let produceItems = require('./produce.json');
 
 const dir = fileURLToPath(import.meta.url);
 
@@ -18,20 +18,35 @@ nunjucks.configure('views', {
     express: app
 });
 
+
 app.use(express.static('public'));
 
 
 app.get('/', function(req, res){
-   let homePage = path.join(path.dirname(dir) + "/main.html")
+   let homePage = path.join(path.dirname(dir) + "/main.html");
    res.sendFile(homePage);
 });
 
 
 app.get('/produce', function(req, res){
-    let resRendered = nunjucks.render('index.html', {items: produceItems});
+    let resRendered = nunjucks.render("produce.html", {items: produceItems});
     res.send(resRendered);
 });
 
+
+app.get('/proteins', function(req, res){
+    let resRendered = nunjucks.render('proteins.html');
+    res.send(resRendered);
+});
+
+app.get('/misc', function(req, res){
+    let resRendered = nunjucks.render('misc.html');
+    res.send(resRendered);
+});
+
+app.use(function(req, res){
+   res.render('404.html', {url: req.url});
+});
 
 
 app.listen(port, host, function(){

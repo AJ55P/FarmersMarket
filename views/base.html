@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    {% block title1 %}{% endblock %}
+</head>
+
+<body>
+     {% block header1 %} {% endblock %}
+     {% include "nav.html" %}
+    <main>
+        {% for item in items %}
+        <div id="divH">
+            <h2>{{item.name}}</h2>
+            <p><strong>Price:</strong> {{item.price}}</p>
+            <p><strong>Description:</strong> {{item.description}}</p>
+            <img src={{item.image}} alt={{item.name}}>
+            <label for="amount1">Choose an amount:</label>
+            <select id="amount1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+        {% else %}
+            <h2>Sorry, no items in this department!</h2>
+        {% endfor %}
+
+    </main>
+    <footer>
+        <p>&#x1F955 Copyright &copy 2021 &#x1F955</p>
+    </footer>
+</body>
+
+</html>
