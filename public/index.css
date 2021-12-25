@@ -58,9 +58,8 @@ main,#mainHome{
 #navX a:hover{
     text-decoration: underline;
 }
-
-
 /* Nav styling */
+
 
 #divH{
     flex: 1 40%;

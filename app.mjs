@@ -27,12 +27,10 @@ app.get('/', function(req, res){
    res.sendFile(homePage);
 });
 
-
 app.get('/produce', function(req, res){
     let resRendered = nunjucks.render("produce.html", {items: produceItems});
     res.send(resRendered);
 });
-
 
 app.get('/proteins', function(req, res){
     let resRendered = nunjucks.render('proteins.html');
@@ -48,15 +46,4 @@ app.use(function(req, res){
    res.render('404.html', {url: req.url});
 });
 
-
-app.listen(port, host, function(){
-    console.log("Farmer's Market app server listening on IPV4", host,":", port);
-});
-
-
-
-
-
-
-
-
+app.listen(process.env.PORT || port);
