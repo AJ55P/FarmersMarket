@@ -1,7 +1,5 @@
 # :corn: :potato: :tomato: Farmer's Market :honeybee: Server Side!
 
-### Live Deployment on Heroku: <a href="https://farmers-market-app1.herokuapp.com/">https://farmers-market-app1.herokuapp.com/</a>
-
 ### **Description:**
 
 Happy Saturday, Wednesday, or whatever day it is, because here I have a website for a farmer's market, specially made for getting access to fresh, farmer's own grown produce, fish, poultry, and more ! 

@@ -19,7 +19,7 @@ nunjucks.configure('views', {
 });
 
 
-app.use(express.static('public'));
+app.use(express.static('public', {index: 'false'}));
 
 
 app.get('/', function(req, res){

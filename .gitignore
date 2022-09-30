@@ -1,2 +1,4 @@
 .DS_Store
 node_modules
+# For render hosting !
+package-lock.json/

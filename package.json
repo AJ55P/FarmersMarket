@@ -1,9 +1,9 @@
 {
   "name": "farmersmarket",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "start1": "nodemon app.mjs"
+    "devStart": "nodemon app.mjs",
+    "start": "node app.mjs"
   },
   "author": "",
   "license": "ISC",
@@ -13,8 +13,5 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  },
-  "engines":{
-    "node": "14.17.6"
   }
 }
